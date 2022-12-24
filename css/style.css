@@ -1,0 +1,126 @@
+*{
+    margin: 0px;/*si quiero la maqueta (cajas sin contenidos) necesito que al menos unno de estos no este en 0*/
+    padding: 0px;
+    box-sizing: border-box;/*para que las cajas no se desborden unas con otras*/
+}
+
+
+/*MODOFICACIONES AL SCROLL BAR ORIGINAL */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Toda la linea */
+  ::-webkit-scrollbar-track {
+    background: #00000000;
+  }
+   
+  /* indicador */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.250); 
+    border-radius: 10px;
+  }
+  
+  /* indicador hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(67, 93, 114, 0.574); 
+  }
+/*MODOFICACIONES AL SCROLL BAR ORIGINAL */
+
+
+
+
+body{
+    background-image: linear-gradient(to right bottom, #d16ba5, #ba6ead, #a170af, #8872ad, #7272a7, #5c6e9d, #496a90, #3b6482, #2b5a6f, #21505c, #1d454a, #1c3a39);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;/**/
+}
+
+
+.contenedorPadre{
+    display: flex;
+    justify-content: center;/**/
+    margin-top: 5vh;/**/
+
+    background-color: gray;/**/
+}
+
+
+    .contenedorCentral{
+
+   
+        display: flex;/*Este es un flex padre por asi decirlo entonces tambien debe llevar el display:flex
+        porque quiero hacer todos los elementos que estan contenidos aqui(en header) responsive*/
+            
+        /*flex-direction: column;/*este hace lo mismo que el de abajo(no se porque use el de abajo y no este)*/
+        /*flex-wrap: nowrap;/*El nowrap(no me respeta los anchos de los elementos, los encoje todos para dejarlos en una misma fila)  ES PARA QUE SE ADAPTE SEGUN EL TAMANIO ESTABLECIDO*/
+        flex-flow: row nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+    
+        width: 1000px;/**/
+
+        background-color: rgba(85, 227, 8, 0.878);/**/
+    }
+
+
+
+        .contenedorIzquierdo{
+            flex: 3 1 auto;
+           /* padding-left: 5vw;/**/
+
+           background-color: red;/**/
+
+            display: flex;
+            flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+    
+        }
+
+            .logo{
+                background-color: #1c3a39;/**/
+            }
+
+            .entradaTexto{
+                background-color: pink;/**/
+            }
+            
+            .contenedorBotonesIzquierdo{
+                background-color: rgb(196, 190, 19);
+            }
+
+                 
+             
+
+
+
+
+        .contenedorDerecho{
+            flex: 1 1 auto;
+    
+            background-color: blue;/**/
+
+         
+            display: flex;
+            flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+        }
+
+
+            .salidaDetexto{
+                background-color: #d16ba5;
+            }
+
+
+            .contenedorBotonesDerecho{
+                background-color: gold;
+            }
+        
+  
+
+
+
+
+
+
+        /*  MEDIA QUERY HACER UN CSS PARA CADA RESOLUCION*/
+
+/*Hacer un css diferente para cada resolucion como lo hace my amiga*/
