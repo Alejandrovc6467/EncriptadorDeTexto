@@ -92,15 +92,14 @@ body{
 
             .entradaTexto{
                 background-color: pink;/**/
-                height: 70%;
+                height: 65%;
 
-                padding-left: 5%;
+                padding-left: 5%;/**/
 
                 display: flex;
                 flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
                 justify-content: center;
-                align-items: center;
-               
+                align-items: center; 
             }
             
 
@@ -113,13 +112,15 @@ body{
                     border-style: none;
                     resize: none;/**/
                     outline: none;
-    
                 }
 
-                /*No estoy convencido de hacerlo asi, cualquier cosa lo cambio*/
-                .entradaTexto p{
-                    translate: -68%;
-                    padding-top: 10px;
+            .advertencias{
+                height: 5%;/**/
+                background-color: aquamarine;
+            }
+                
+                .advertencia{
+                    padding-left: 14%;/**/
                 }
             
             .contenedorBotonesIzquierdo{
