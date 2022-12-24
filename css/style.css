@@ -66,14 +66,14 @@ body{
 
 
         .contenedorIzquierdo{
-            flex: 3 1 auto;
+            flex: 10 1 auto;
            /* padding-left: 5vw;/**/
 
            background-color: red;/**/
 
             display: flex;
             flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
-         
+            margin-right: 20px;
         }
 
             .logo{
@@ -81,10 +81,28 @@ body{
                 height: 15%;
             }
 
+            img{
+                padding-top: 10px;
+                background-color: blue;
+                translate: -30px;/**/
+            }
+
+           
+
+
             .entradaTexto{
                 background-color: pink;/**/
-               height: 70%;
+                height: 70%;
+
+                padding-left: 5%;
+
+                display: flex;
+                flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+                justify-content: center;
+                align-items: center;
+               
             }
+            
 
                 .textAreaIzq{
                     width: 90%;
@@ -97,12 +115,59 @@ body{
                     outline: none;
     
                 }
+
+                /*No estoy convencido de hacerlo asi, cualquier cosa lo cambio*/
+                .entradaTexto p{
+                    translate: -68%;
+                    padding-top: 10px;
+                }
             
             .contenedorBotonesIzquierdo{
                 background-color: rgb(196, 190, 19);
                 height: 15%;
+
+                display: flex;/**/
+                flex-flow: row nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+                /*justify-content: space-around;/**/
+                justify-content: center;
+                align-items: center;/**/
+                /*align-content: space-between;/**/
                 
             }
+
+                .boton{
+
+                    width: 35%;
+
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    padding: 6px;
+                    
+                    height: 35px;
+
+                  
+
+                    color: white;
+                    border: none;/**/
+                    border-radius: 12px;
+                    
+                    cursor: pointer;/*me cambia el cursor por la manita*/
+                    overflow: hidden;
+
+                }
+
+                    .encriptar{
+                        background-color: #D16BA5;
+                        margin-right: 20px;
+                    }
+
+                    .desencriptar{
+                        background-color: #5A7099;
+                    
+                    }
+
+
 
                  
              
@@ -124,11 +189,20 @@ body{
             .salidaDetexto{
                 background-color: #d16ba5;
                 height: 85%;
+
+                display: flex;
+                flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+                justify-content: center;
+                align-items: center;
             }
 
             .textAreaDer{
                
                 width: 90%;
+                height: 90%;
+
+                padding: 10px 10px 10px 10px;
+                
                
                 border-style: none;
                 resize: none;
@@ -142,7 +216,24 @@ body{
             .contenedorBotonesDerecho{
                 background-color: gold;
                 height: 15%;
+
+                display: flex;/**/
+                flex-flow: row nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+                /*justify-content: space-around;/**/
+                justify-content: center;
+                align-items: center;/**/
             }
+
+
+                .copiar{
+                    /*display: none;/**/
+
+                    
+
+                    width: 80%;
+                    
+                    background-color: #1C3A39;
+                }
         
   
 
