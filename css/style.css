@@ -82,7 +82,20 @@ body{
 
             .entradaTexto{
                 background-color: pink;/**/
+               
             }
+
+                .textAreaIzq{
+                    width: 90%;
+                    height: 80%;
+                    font-size: 1.6rem;
+                    color: #737373;
+                    font-family: 'Montserrat', sans-serif;
+                    border-style: none;
+                    resize: none;/**/
+                    outline: none;
+    
+                }
             
             .contenedorBotonesIzquierdo{
                 background-color: rgb(196, 190, 19);
@@ -109,6 +122,17 @@ body{
                 background-color: #d16ba5;
             }
 
+            .textAreaDer{
+               
+                width: 80%;
+                border-style: none;
+                resize: none;
+                outline: none;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px;
+              
+            }
 
             .contenedorBotonesDerecho{
                 background-color: gold;
