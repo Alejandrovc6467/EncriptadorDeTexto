@@ -73,16 +73,17 @@ body{
 
             display: flex;
             flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
-    
+         
         }
 
             .logo{
                 background-color: #1c3a39;/**/
+                height: 15%;
             }
 
             .entradaTexto{
                 background-color: pink;/**/
-               
+               height: 70%;
             }
 
                 .textAreaIzq{
@@ -99,6 +100,8 @@ body{
             
             .contenedorBotonesIzquierdo{
                 background-color: rgb(196, 190, 19);
+                height: 15%;
+                
             }
 
                  
@@ -120,11 +123,13 @@ body{
 
             .salidaDetexto{
                 background-color: #d16ba5;
+                height: 85%;
             }
 
             .textAreaDer{
                
-                width: 80%;
+                width: 90%;
+               
                 border-style: none;
                 resize: none;
                 outline: none;
@@ -136,6 +141,7 @@ body{
 
             .contenedorBotonesDerecho{
                 background-color: gold;
+                height: 15%;
             }
         
   
