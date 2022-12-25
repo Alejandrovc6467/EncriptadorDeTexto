@@ -57,7 +57,8 @@ body{
         flex-flow: row nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
     
         width: 1000px;
-        margin: 0 5px;
+        margin: 0 10px 20px 10px;/**/
+        
 
        /* background-color: rgba(85, 227, 8, 0.878);/**/
     }
@@ -73,7 +74,7 @@ body{
 
             display: flex;
             flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
-            margin-right: 20px;
+             margin-right: 20px;/**/
         }
 
             .logo{
@@ -303,7 +304,8 @@ body{
 footer{
     display: flex;
     justify-content: center;
-    margin-top: 5vh;/**/
+
+    margin-bottom: 5vh;
 }
 
     .footerMain{
@@ -313,6 +315,8 @@ footer{
         background-color: rgba(0, 0, 0, 0.215);
         border-radius: 15px;
         padding: 10px 100px 10px 100px;
+        width: 1000px;
+        margin: 0px 10px 0px 10px;
     }
             
     .designed{
@@ -350,9 +354,39 @@ footer{
 
 
 
+/*Media query para todas las resoluciones*/
+
+@media all and (max-width:720px){
+
+    .contenedorCentral{
+        flex-flow: column nowrap;
+    }
+
+    .contenedorIzquierdo{
+        margin: 0 0 20px 0;
+    }
+
+    .contenedorDerecho{
+        padding-bottom: 25px;
+    }
+
+}
 
 
+@media all and (max-width:450px){
 
-        /*  MEDIA QUERY HACER UN CSS PARA CADA RESOLUCION*/
+    .contenedorBotonesIzquierdo{
+        flex-flow: column nowrap;
+        margin: 10px 0px 25px 0px;
+    }
 
-/*Hacer un css diferente para cada resolucion como lo hace my amiga*/
+    .boton{
+        width: 80%;
+    }
+
+    .encriptar{
+        background-color: #D16BA5;
+        margin: 0px 0px 15px 0px ;
+    }
+
+}
