@@ -44,7 +44,7 @@ body{
     justify-content: center;/**/
     margin-top: 5vh;/**/
 
-    background-color: gray;/**/
+    /*background-color: gray;/**/
 }
 
 
@@ -58,9 +58,10 @@ body{
         /*flex-wrap: nowrap;/*El nowrap(no me respeta los anchos de los elementos, los encoje todos para dejarlos en una misma fila)  ES PARA QUE SE ADAPTE SEGUN EL TAMANIO ESTABLECIDO*/
         flex-flow: row nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
     
-        width: 1000px;/**/
+        width: 1000px;
+        margin: 0 5px;
 
-        background-color: rgba(85, 227, 8, 0.878);/**/
+       /* background-color: rgba(85, 227, 8, 0.878);/**/
     }
 
 
@@ -69,7 +70,11 @@ body{
             flex: 10 1 auto;
            /* padding-left: 5vw;/**/
 
-           background-color: red;/**/
+           /*background-color: red;/**/
+            outline: 3px solid #ffffff;/**/
+            /*background-color: transparent;/**/
+            background-color: rgba(0, 0, 0, 0.215);
+            border-radius: 10px;
 
             display: flex;
             flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
@@ -77,29 +82,53 @@ body{
         }
 
             .logo{
-                background-color: #1c3a39;/**/
+               /* background-color: #1c3a39;/**/
                 height: 15%;
             }
 
+                /*Animacion logo*/
+                .logo span{
+                    display: inline-block;
+                    animation: logo-anim 1s infinite;
+                    animation-delay: calc(0.1s * var(--item));
+                    animation-duration: 5s;
+                    
+                }
+    
+                @keyframes logo-anim {
+                    0%,
+                    80%,
+                    
+                    50% {
+                        transform:rotate(360deg);
+                    }
+    
+                    55% {  
+                        transform:rotate(90deg);
+                    }
+    
+                }
+                /*Animacion logo*/
+
             img{
                 padding-top: 10px;
-                background-color: blue;
-                translate: -30px;/**/
+                /*background-color: blue;/**/
             }
 
            
 
 
             .entradaTexto{
-                background-color: pink;/**/
+                /*background-color: pink;/**/
                 height: 65%;
 
-                padding-left: 5%;/**/
+                padding-left: 10%;/**/
 
                 display: flex;
                 flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
                 justify-content: center;
-                align-items: center; 
+                align-items: center;
+               
             }
             
 
@@ -107,24 +136,30 @@ body{
                     width: 90%;
                     height: 80%;
                     font-size: 1.6rem;
-                    color: #737373;
                     font-family: 'Montserrat', sans-serif;
                     border-style: none;
                     resize: none;/**/
                     outline: none;
+                    background-color: transparent;
+                    color: white;
+    
                 }
 
             .advertencias{
                 height: 5%;/**/
-                background-color: aquamarine;
+                /*background-color: aquamarine;/**/
+
             }
                 
                 .advertencia{
-                    padding-left: 14%;/**/
+                    padding-left: 14%;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 0.8rem;
+                    color: rgba(255, 255, 255, 0.732);
                 }
             
             .contenedorBotonesIzquierdo{
-                background-color: rgb(196, 190, 19);
+                /*background-color: rgb(196, 190, 19);/**/
                 height: 15%;
 
                 display: flex;/**/
@@ -140,8 +175,9 @@ body{
 
                     width: 35%;
 
-                    font-size: 10px;
-                    text-transform: uppercase;
+                  
+                    font-size: 1rem;
+                    font-family: 'Montserrat', sans-serif;/**/
                     letter-spacing: 2px;
                     padding: 6px;
                     
@@ -154,7 +190,7 @@ body{
                     border-radius: 12px;
                     
                     cursor: pointer;/*me cambia el cursor por la manita*/
-                    overflow: hidden;
+                    /*overflow: hidden;/**/
 
                 }
 
@@ -179,8 +215,11 @@ body{
         .contenedorDerecho{
             flex: 1 1 auto;
     
-            background-color: blue;/**/
-
+           /* background-color: blue;/**/
+           outline: 3px solid #ffffff;/**/
+           /*background-color: transparent;/**/
+           background-color: rgba(0, 0, 0, 0.215);
+           border-radius: 10px;
          
             display: flex;
             flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
@@ -188,13 +227,15 @@ body{
 
 
             .salidaDetexto{
-                background-color: #d16ba5;
+                /*background-color: #d16ba5;/**/
                 height: 85%;
 
                 display: flex;
                 flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
                 justify-content: center;
                 align-items: center;
+
+                display: none;/**/
             }
 
             .textAreaDer{
@@ -209,13 +250,16 @@ body{
                 resize: none;
                 outline: none;
                 text-align: center;
+                /*font-size: 1.6rem;/**/
+                font-size: 14px;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 13px;
+                background-color: transparent;
+                color: white;
               
             }
 
             .contenedorBotonesDerecho{
-                background-color: gold;
+               /* background-color: gold;/**/
                 height: 15%;
 
                 display: flex;/**/
@@ -223,6 +267,8 @@ body{
                 /*justify-content: space-around;/**/
                 justify-content: center;
                 align-items: center;/**/
+
+                display: none;/**/
             }
 
 
@@ -237,7 +283,42 @@ body{
                 }
         
   
+            /*Contenido visible cuando no hay texto encriptado*/
+            
+            
+            .sinMensaje{
+                width: 100%;
+                height: 100%;
+                font-family: 'Montserrat', sans-serif;
 
+                display: flex;
+                flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+                justify-content: center;/**/
+                align-items: center;/**/
+                text-align: center;/**/
+    
+                /*display: none;/**/
+            }
+
+                .dibujo{
+                    width: 255px;/**/
+                    opacity: 0.5;
+                }
+
+
+                .textoSinMensaje1{
+                    margin-top: 40px;
+                    color: white;
+                    font-size: 1.5rem;
+                   /* display: none;/**/
+                }
+
+                .textoSinMensaje2{
+                    margin-top:15px;
+                    color: rgba(255, 255, 255, 0.708);
+                    font-size: 10px;
+                    /*display: none;/**/  
+                }
 
 
 

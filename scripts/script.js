@@ -1,0 +1,6 @@
+
+
+function encriptar(){
+
+    alert("sirve");
+}
