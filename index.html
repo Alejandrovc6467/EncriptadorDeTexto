@@ -12,9 +12,12 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 760px)">
     <!--Hacer un css diferente para cada resolucion como lo hace my amiga-->
 
-    
+        <!-- scripts -->
+    <script src="scripts/script.js"></script>
+
 </head>
 
 
@@ -40,7 +43,7 @@
                 </div>
                 
                 <div class="contenedorBotonesIzquierdo">
-                    <input type="button" value="Encriptar" class="boton encriptar">
+                    <input type="button" value="Encriptar" class="boton encriptar" onclick="encriptar2()">
                     <input type="button" value="Desencriptar" class="boton desencriptar">
                 </div>
     
@@ -48,16 +51,16 @@
     
             <div class="contenedorDerecho">
     
-                <div class="salidaDetexto">
+                <div id="salidaDetexto" class="salidaDetexto">
                     <textarea name="textAreaDer" id="output-texto" class="textAreaDer" cols="30" rows="7"></textarea>
                 </div>
 
-                <div class="contenedorBotonesDerecho">
+                <div id="contenedorBotonesDerecho" class="contenedorBotonesDerecho">
                     <input type="button" value="Copiar" class="boton copiar">
                 </div>
 
                 <!--Contenedor visible solo cundo no hay texto encriptado-->
-                <div class="sinMensaje">
+                <div id="sinMensaje" class="sinMensaje">
                     <img src="image/dibujo.png" alt="" class="dibujo">
                     <p class="textoSinMensaje1">Ningún mensaje<br>fue encontrado</p>
                     <p class="textoSinMensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
@@ -69,8 +72,27 @@
         </div>
 
     </div>
-   
 
+
+    <footer>
+
+        <div class="footerMain">
+
+            <div class="designed">
+                <p>Designed by <span class="nameDesigned">ALEJANDRO</span> </p>
+            </div>
+    
+            <div class="redes">
+                <a href="https://github.com/Alejandrovc6467"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luisalejandrovasquezcordero"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/alejandrovc177/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </div>
+
+    </footer>
+   
+  
 </body>
 
 

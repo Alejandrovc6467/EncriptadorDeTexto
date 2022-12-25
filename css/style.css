@@ -71,8 +71,6 @@ body{
            /* padding-left: 5vw;/**/
 
            /*background-color: red;/**/
-            outline: 3px solid #ffffff;/**/
-            /*background-color: transparent;/**/
             background-color: rgba(0, 0, 0, 0.215);
             border-radius: 10px;
 
@@ -216,10 +214,8 @@ body{
             flex: 1 1 auto;
     
            /* background-color: blue;/**/
-           outline: 3px solid #ffffff;/**/
-           /*background-color: transparent;/**/
-           background-color: rgba(0, 0, 0, 0.215);
-           border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.215);
+            border-radius: 10px;
          
             display: flex;
             flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
@@ -319,6 +315,60 @@ body{
                     font-size: 10px;
                     /*display: none;/**/  
                 }
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;/**/
+}
+
+    .footerMain{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.215);
+        border-radius: 15px;
+        padding: 10px 100px 10px 100px;
+    }
+            
+    .designed{
+        font-family: 'Montserrat', sans-serif;
+        color: rgba(255, 255, 255, 0.782);
+        font-style: italic;
+        text-align: center;     
+    }
+
+         .nameDesigned{
+            color: rgb(255, 255, 255);
+            font-style: italic;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.01PX;           
+        }
+        
+            
+            
+    .redes{
+        margin-top: 15px;
+        text-align: center; 
+        font-family: 'Montserrat', sans-serif;
+    }
+            
+        .redes a{
+            color: white;
+            padding-right: 15px;
+            font-size: 25px;
+            text-decoration: none;
+        }
+            
+                        
+            
+                   
+
 
 
 
