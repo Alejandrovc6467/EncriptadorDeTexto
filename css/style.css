@@ -33,7 +33,7 @@ body{
     background-image: linear-gradient(to right bottom, #d16ba5, #ba6ead, #a170af, #8872ad, #7272a7, #5c6e9d, #496a90, #3b6482, #2b5a6f, #21505c, #1d454a, #1c3a39);
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;/**/
+    background-size: cover;
 }
 
 
@@ -47,8 +47,6 @@ body{
 
 
     .contenedorCentral{
-
-   
         display: flex;/*Este es un flex padre por asi decirlo entonces tambien debe llevar el display:flex
         porque quiero hacer todos los elementos que estan contenidos aqui(en header) responsive*/
             
@@ -59,14 +57,12 @@ body{
         width: 1000px;
         margin: 0 10px 20px 10px;/**/
         
-
        /* background-color: rgba(85, 227, 8, 0.878);/**/
     }
 
 
         .contenedorIzquierdo{
             flex: 10 1 auto;
-           /* padding-left: 5vw;/**/
 
            /*background-color: red;/**/
             background-color: rgba(0, 0, 0, 0.215);
@@ -74,7 +70,7 @@ body{
 
             display: flex;
             flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
-             margin-right: 20px;/**/
+            margin-right: 20px;/**/
         }
 
             .logo{
@@ -133,7 +129,7 @@ body{
                     resize: none;/**/
                     outline: none;
                     background-color: transparent;
-                    color: white;
+                    color: rgba(255, 255, 255, 0.741);
     
                 }
 
@@ -146,46 +142,44 @@ body{
                     padding-left: 14%;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 0.8rem;
-                    color: rgba(255, 255, 255, 0.732);
+                    color: rgba(255, 255, 255, 0.63);
                 }
             
             .contenedorBotonesIzquierdo{
                 /*background-color: rgb(196, 190, 19);/**/
                 height: 15%;
-
-                display: flex;/**/
-                flex-flow: row nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
-                /*justify-content: space-around;/**/
+                display: flex;
+                flex-flow: row nowrap;
                 justify-content: center;
-                align-items: center;/**/
-                /*align-content: space-between;/**/
-                
+                align-items: center;  
             }
 
                 .boton{
-
                     width: 35%;
-
-                  
                     font-size: 1rem;
                     font-family: 'Montserrat', sans-serif;/**/
                     letter-spacing: 2px;
                     padding: 6px;
-                    
                     height: 35px;
-
-                  
-
-                    color: white;
-                    border: none;/**/
+                    color: rgba(255, 255, 255, 0.696);
+                    border: none;
                     border-radius: 12px;
-                    
-                    cursor: pointer;/*me cambia el cursor por la manita*/
-                    /*overflow: hidden;/**/
+                    cursor: pointer;
                 }
 
+
+                    .boton:hover {
+                        transform: scale(1.04);/**/
+                        box-shadow: 1px 1px 8px #00000069;
+                        transition: 0.5s transform;
+                    }
+                    
+                    .boton:active {
+                        background: #dadada43;
+                    }
+
                     .encriptar{
-                        background-color: #D16BA5;
+                        background-color: #ab5d89;
                         margin-right: 20px;
                     }
 
@@ -193,6 +187,7 @@ body{
                         background-color: #5A7099;
                     
                     }
+
 
 
         .contenedorDerecho{
@@ -235,7 +230,7 @@ body{
                 font-size: 14px;
                 font-family: 'Montserrat', sans-serif;
                 background-color: transparent;
-                color: white;
+                color: rgba(255, 255, 255, 0.741);
               
             }
 
@@ -248,18 +243,12 @@ body{
                 /*justify-content: space-around;/**/
                 justify-content: center;
                 align-items: center;/**/
-
                 display: none;/**/
             }
 
                 .copiar{
-                    /*display: none;/**/
-
-                    
-
                     width: 80%;
-                    
-                    background-color: #1C3A39;
+                    background-color: #066e7e;
                 }
         
   
@@ -272,7 +261,7 @@ body{
                 font-family: 'Montserrat', sans-serif;
 
                 display: flex;
-                flex-flow: column nowrap;/*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+                flex-flow: column nowrap;
                 justify-content: center;/**/
                 align-items: center;/**/
                 text-align: center;/**/
@@ -300,11 +289,10 @@ body{
                     /*display: none;/**/  
                 }
 
-/*Meter el footer dentro del cuerpo del del contenedor verde, para que tenga el mismo ancho de los otros bloques*/
+
 footer{
     display: flex;
     justify-content: center;
-
     margin-bottom: 5vh;
 }
 
@@ -314,9 +302,9 @@ footer{
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.215);
         border-radius: 15px;
-        padding: 10px 100px 10px 100px;
+        padding: 10px 50px;/**/
         width: 1000px;
-        margin: 0px 10px 0px 10px;
+        margin: 0px 10px;
     }
             
     .designed{
@@ -343,7 +331,7 @@ footer{
             
         .redes a{
             color: white;
-            padding-right: 15px;
+            padding: 0 5px;
             font-size: 25px;
             text-decoration: none;
         }
@@ -352,11 +340,9 @@ footer{
             
                    
 
+/*Media query*/
 
-
-/*Media query para todas las resoluciones*/
-
-@media all and (max-width:720px){
+@media all and (max-width:750px){
 
     .contenedorCentral{
         flex-flow: column nowrap;
@@ -370,8 +356,10 @@ footer{
         padding-bottom: 25px;
     }
 
+    .dibujo{
+        display: none;
+    }
 }
-
 
 @media all and (max-width:450px){
 
@@ -385,8 +373,10 @@ footer{
     }
 
     .encriptar{
-        background-color: #D16BA5;
         margin: 0px 0px 15px 0px ;
     }
 
+    .entradaTexto{
+        padding-left: 0;
+    }
 }
