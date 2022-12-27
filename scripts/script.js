@@ -14,17 +14,31 @@ function copy() {
     document.execCommand("copy");
     Swal.fire({
         icon: 'success',
-        iconColor: '#b9ab9c',
-        background: '#ab5d89',
-        title: '¡Bien!',
-        confirmButtonColor: '#b9ab9c',
-        text: 'Texto copiado correctamente',
+        iconColor: '#f2f2f2',
+        background: '#5A7099',
+        title: '¡Texto copiado!',
+        color:'#f2f2f2',
+        confirmButtonColor: '#5A7099',
     });
 }
 
+function campoVacio(){
+
+    Swal.fire({
+        icon: 'error',
+        iconColor: '#f2f2f2',
+        background: '#5A7099',
+        title: '¡Vaya!',
+        color:'#f2f2f2',
+        confirmButtonColor: '#5A7099',
+        text: 'Ingresa un mensaje',
+      });
+
+}
+
+
 
 function encriptar() {
-
 
     let sinMensaje = document.getElementById("sinMensaje");
     let salidaDetexto = document.getElementById("salidaDetexto");
@@ -35,14 +49,16 @@ function encriptar() {
     if (texto.length!=0) {
 
         if (/[^a-zñ ]/.test(texto)) {
-            alert("Hacer que se mueva la advertencia o no se modificar esta ventana");
+            
+
             Swal.fire({
+                iconColor: '#f2f2f2',
                 icon: 'error',
-                iconColor: '#b9ab9c',
-                background: '#E3E0DE',
-                title: 'Oops...',
-                confirmButtonColor: '#b9ab9c',
-                text: 'Solo se permiten letras minusculas y sin acento',
+                background: '#5A7099',
+                title: '¡Vaya!',
+                color:'#f2f2f2',
+                confirmButtonColor: '#5A7099',
+                text: 'Escribe solo letras minusculas y sin acento',
               });
 
         }else{
@@ -63,16 +79,8 @@ function encriptar() {
  
 
     }else{
-        alert("modficar la venta de vacio o hacer otra cosa no se");
-        Swal.fire({
-            icon: 'error',
-            iconColor: '#b9ab9c',
-            background: '#E3E0DE',
-            title: 'Oops...',
-            confirmButtonColor: '#b9ab9c',
-            text: 'El campo de texto está vacio, escriba el texto que desea encriptar',
-            width: '250px',
-          });
+       
+        campoVacio();
     }
 
 }
@@ -80,20 +88,29 @@ function encriptar() {
 
 function desencriptar(){
 
+    let sinMensaje = document.getElementById("sinMensaje");
+    let salidaDetexto = document.getElementById("salidaDetexto");
+    let contenedorBotonesDerecho = document.getElementById("contenedorBotonesDerecho");
+    let texto = document.getElementById("textAreaIzq").value;
 
 
+    if (texto.length!=0) {
 
-alert("desencriptar voy por esto");
+        sinMensaje.style.display= "none";
+        salidaDetexto.style.display= "flex";
+        contenedorBotonesDerecho.style.display= "flex";
 
+        let cifradoText = texto.replace(/enter/gm, "e");
+        cifradoText = cifradoText.replace(/imes/gm, "i");
+        cifradoText = cifradoText.replace(/ai/gm, "a");
+        cifradoText = cifradoText.replace(/ober/gm, "o");
+        cifradoText = cifradoText.replace(/ufat/gm, "u");
+
+        document.getElementById("textAreaDer").innerHTML = cifradoText;
+
+    }else{
+
+        campoVacio();
+    }
 
 }
-
-
-alert("Revisar que se desencripte bien el texto prueba del TRELLO y compararlo con m");
-
-
-
-
-
-
-
