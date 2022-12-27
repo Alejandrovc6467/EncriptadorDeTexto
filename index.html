@@ -11,11 +11,11 @@
     <title>Encriptador de Texto</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--Hacer un css diferente para cada resolucion como lo hace my amiga-->
+    <link rel="stylesheet" href="css/style.css">  
 
-        <!-- scripts -->
-    <script src="scripts/script.js"></script>
+
+    <!-- Librería alertar -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="entradaTexto">
-                    <textarea name="textAreaIzq" class="textAreaIzq" id="" cols="30" rows="13" placeholder="Ingrese el texto aquí"></textarea>
+                    <textarea name="textAreaIzq" class="textAreaIzq" id="textAreaIzq" cols="30" rows="13" placeholder="Ingrese el texto aquí"></textarea>
                 </div>
 
                 <div class="advertencias">
@@ -42,8 +42,8 @@
                 </div>
                 
                 <div class="contenedorBotonesIzquierdo">
-                    <input type="button" value="Encriptar" class="boton encriptar" onclick="encriptar2()">
-                    <input type="button" value="Desencriptar" class="boton desencriptar">
+                    <input type="button" value="Encriptar" class="boton encriptar" onclick="encriptar()">
+                    <input type="button" value="Desencriptar" class="boton desencriptar" onclick="desencriptar()">
                 </div>
     
             </div>
@@ -51,16 +51,16 @@
             <div class="contenedorDerecho">
     
                 <div id="salidaDetexto" class="salidaDetexto">
-                    <textarea name="textAreaDer" id="output-texto" class="textAreaDer" cols="30" rows="7"></textarea>
+                    <textarea name="" id="textAreaDer" class="textAreaDer" cols="30" rows="7"></textarea>
                 </div>
 
                 <div id="contenedorBotonesDerecho" class="contenedorBotonesDerecho">
-                    <input type="button" value="Copiar" class="boton copiar">
+                    <input type="button" value="Copiar" class="boton copiar" onclick="copy()">
                 </div>
 
                 <!--Contenedor visible solo cundo no hay texto encriptado-->
                 <div id="sinMensaje" class="sinMensaje">
-                    <img src="image/dibujo.png" alt="" class="dibujo">
+                    <img src="image/dibujo2.png" alt="" class="dibujo">
                     <p class="textoSinMensaje1">Ningún mensaje<br>fue encontrado</p>
                     <p class="textoSinMensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
                     
@@ -91,6 +91,7 @@
 
     </footer>
    
+    <script src="scripts/script.js"></script>
   
 </body>
 

@@ -130,7 +130,11 @@ body{
                     outline: none;
                     background-color: transparent;
                     color: rgba(255, 255, 255, 0.741);
-    
+                    
+                }
+
+                .textAreaIzq::placeholder {
+                   color: rgba(255, 255, 255, 0.7);/**/
                 }
 
             .advertencias{
@@ -277,7 +281,7 @@ body{
 
                 .textoSinMensaje1{
                     margin-top: 40px;
-                    color: white;
+                    color: rgba(255, 255, 255, 0.74);
                     font-size: 1.5rem;
                    /* display: none;/**/
                 }
