@@ -42,5 +42,5 @@ Las "llaves" de encriptación que se utilizaron son las siguiente:
 
 ---
 
-[**Ir a la página** ✌](https://pagina aqui)
+[**Ir a la página** ✌](https://link de pagina aqui, cuando ya la tenga subida)
 ---
