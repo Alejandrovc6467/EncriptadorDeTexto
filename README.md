@@ -1,3 +1,5 @@
+![disenio](https://user-images.githubusercontent.com/104018861/209746775-5de5d0d3-0ac0-4175-9c86-11025369af91.jpg)
+
 # Encriptador de Texto | Challenge ONE - Oracle Next Education
 
 Link del proyecto al final ⬇
@@ -37,7 +39,7 @@ Las "llaves" de encriptación que se utilizaron son las siguiente:
 **Visualiación:**  
   
   
-![disenio](https://user-images.githubusercontent.com/104018861/209746775-5de5d0d3-0ac0-4175-9c86-11025369af91.jpg)
+
 
 
 
