@@ -345,6 +345,10 @@ footer{
                    
 
 /*Media query*/
+/*Si quisiera que mi pagina se vea exactamente igual en el movil que en la version web
+quito estos media query y en el index quito el
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+*/
 
 @media all and (max-width:750px){
 
